@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* header */
+.header {
+	display: flex;
+	justify-content: space-around;
+	width: 100vw;
+	height: 50px;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.83);
+}
+
+.logo {
+	color: rgb(73, 166, 233);
+	transform: translateY(28%);
+	font-size: 1rem;
+	letter-spacing: 0.15rem;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav {
+	transform: translateY(28%);
+}
+
+.nav a {
+	color: black;
+	text-decoration: none;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1rem;
+	letter-spacing: 0.15rem;
+	margin-right: 1rem;
+	transition: all 0.1s ease-in-out;
+}
+
+.nav a:hover {
+	color: rgb(73, 166, 233);
+}
+/* end of header */
+
+/* main */
+.main {
+	height: calc(100vh - 50px);
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.content h1 {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	letter-spacing: 0.15rem;
+	background-color: black;
+	color: white;
+	border-radius: 0.8rem;
+	padding: 1rem;
+	margin-bottom: 2rem;
+	font-size: 2.5rem;
+}
+
+.content button {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+	padding: 0.7rem 1.5rem;
+	border-radius: 0.5rem;
+	letter-spacing: 0.15rem;
+	cursor: pointer;
+	border: 2px solid black;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+	margin: 0 auto;
+}
+.content button:hover {
+	background-color: black;
+	color: white;
+}
+
+/* end of main */
