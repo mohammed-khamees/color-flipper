@@ -6,13 +6,12 @@ const color = document.querySelector('.color');
 btn.addEventListener('click', function () {
 	let hexColor = '#';
 	for (let index = 0; index < 6; index++) {
-		const randomNumber = getRnadomNumber();
-		hexColor += hex[randomNumber];
+		hexColor += hex[getRandomNumber()];
 	}
 	document.body.style.backgroundColor = hexColor;
 	color.textContent = hexColor;
 });
 
-function getRnadomNumber() {
+function getRandomNumber() {
 	return Math.floor(Math.random() * hex.length);
 }
